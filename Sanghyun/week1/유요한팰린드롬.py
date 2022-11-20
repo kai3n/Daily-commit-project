@@ -11,5 +11,5 @@ class Solution:
             # str 맨앞 문자랑 맨뒤 문자가 같지 않으면 False 리턴 
             if str.pop()!=str.pop(0):
                 return False
-        # str이 0,1이면 뒤집어도 똑같은 말이 되기 때문에 True 반호나 
+        # str이 0,1이면 뒤집어도 똑같은 말이 되기 때문에 True 반환
         return True
