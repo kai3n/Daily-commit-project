@@ -14,5 +14,5 @@ def solution(s):
         # 맨 앞문자가 앞파벳이 아니면 그냥 다 저장 
         else:
             answer +=" "+item
-    # 맨앞에 공백문자 처리한후 반환 
+    # 맨앞에 공백문자 처리 한후 반환 
     return answer.lstrip()
