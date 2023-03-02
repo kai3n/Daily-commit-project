@@ -1,3 +1,4 @@
+# Count solution
 class Solution:
     def sumPrefixScores(self, W: List[str]) -> List[int]:
         C = collections.defaultdict(int)
