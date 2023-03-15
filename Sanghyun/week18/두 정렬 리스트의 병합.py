@@ -1,4 +1,4 @@
-# 연결리스트 
+# 연결리스트
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -15,3 +15,4 @@ class Solution:
             l1.next = self.mergeTwoLists(l1.next, l2)
         # 정렬된 리스트 반환
         return l1
+    
