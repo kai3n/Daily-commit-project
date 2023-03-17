@@ -1,1 +1,0 @@
-# 멀티 ssh 사용 test test
