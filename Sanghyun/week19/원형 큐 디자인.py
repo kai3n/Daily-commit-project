@@ -10,7 +10,7 @@ class MyCircularQueue:
     def enQueue(self, value: int) -> bool:
         if self.q[self.rear] is None:
             self.q[self.rear] = value
-            self.rear = (self.rear + 1) % self.lenth
+            self.rear = (self.rear + 1) % self.length
             return True
         else:
             return False
