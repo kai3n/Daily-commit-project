@@ -1,5 +1,5 @@
 class MyCircularQueue:
-    # 배열을 원형큐 길이만큼 초기화, front , rear 포인트 초기화
+    # 배열을 원형큐 길이만큼 초기화, front , rear 포인트 초기화.
     def __init__(self, k: int):
         self.q = [None] * k
         self.length = k
