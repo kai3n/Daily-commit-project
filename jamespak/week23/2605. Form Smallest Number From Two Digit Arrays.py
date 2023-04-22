@@ -1,6 +1,7 @@
 class Solution:
     def minNumber(self, nums1: List[int], nums2: List[int]) -> int:
-        res = sorted(set(nums1).intersection(nums2))
-        if len(res) > 0:
-            return res[0]
-        return min(int(str(sorted(nums1)[0]) + str(sorted(nums2)[0])), int(str(sorted(nums2)[0]) + str(sorted(nums1)[0])))
+        s1, s2 = set(nums1), set(nums2)
+        if s1 & s2:
+            return min(s1 & s2)
+        a, b = min(nums1), min(nums2)
+        return min(int(str(a) + str(b)), int(str(b) + str(a)))
