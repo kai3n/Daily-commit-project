@@ -5,7 +5,7 @@ def solution(maps):
     len_x,len_y = len(maps) , len(maps[0])
     # 초기 큐 값 설정
     queue = deque([(0,0)])
-    # 상하좌우 이동할 값 저ㅇ
+    # 상하좌우 이동할 값 저장
     direct = [(1,0),(-1,0),(0,1),(0,-1)]
     
     while queue:
