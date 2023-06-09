@@ -1,0 +1,20 @@
+How do you group the same topic by using ML?
+
+m0> [10:20:01] a     Jack: I have an extra ticket for the game this week, if anyone is interested. 0.1
+m1> [11:20:05]  b    Jack: Hi diane, how are you doing today.
+m2> [11:20:07]   c   Luke: Did you guys watch the game last night? // 0.2
+m3> [11:20:08]  b    Diane: @<Jack> I am doing fine. How was your weekend?  // 0.9
+m4> [11:20:12]   c   Leia: Yes, it was crazy!! 0.3
+m5> [11:20:13]    d  Alex: anybody has a recipe for ceviche? 0.4
+m6> [11:20:20]  b    Jack: My weekend was great. 0.8
+m7> [11:20:20]   c   Jack: Yes, it was a crazy game.
+
+-> {m0}, {m1, m3, m6}, {m2, m4, m7}, {m5}.
+
+-> {m0}, {m1, m3, m20, m89, m96}, {m2, m3, m97, m98}
+
+m20 -> m0 - m19
+m20 - m0
+m20 - m1
+m20 - m2
+m_i vs. m_n
