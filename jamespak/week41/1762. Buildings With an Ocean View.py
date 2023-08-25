@@ -7,5 +7,4 @@ class Solution:
             if heights[-i] > cur_max:
                 cur_max = heights[-i]
                 res.append(len(heights) - i)
-        res.sort()
-        return res
+        return res[::-1]
