@@ -16,5 +16,5 @@ def solution(A, B):
         else:
             # A가 크면 B포인트만 갱신
             b_point+=1
-    # B 승점 반환
+    # B 승점 반환 #수정
     return answer
