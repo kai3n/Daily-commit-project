@@ -3,5 +3,6 @@ class Solution:
         d = defaultdict(int)
         for word in words:
             d[word] += 1
-        res = sorted(d, key=lambda x: (-d[x], x))
-        return res[:k]
+        h = [(-val, key) for key, val in d.items()]
+        heapq.heapify(h)
+        return [heapq.heappop(h)[1] for _ in range(k)]
